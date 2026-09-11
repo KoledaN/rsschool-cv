@@ -1,7 +1,8 @@
 :root {
   --background: #ffffff;
   --text: #202020;
-  --accent: #3157a5;
+  --accent: #006570;
+  --link: #3157a5;
   --border: #ddddda;
   --surface: #f7f7f5;
   --muted: #707070;
@@ -34,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--link);
 }
 
 img {
@@ -62,14 +63,14 @@ ul {
 .header .header-content {
   display: flex;
   align-items: center;
-  gap: 35px;
-  padding: 55px 0 45px;
+  gap: 30px;
+  padding: 50px 0 40px;
 }
 
 .header .photo {
-  width: 135px;
-  height: 135px;
-  flex: 0 0 135px;
+  width: 130px;
+  height: 130px;
+  flex: 0 0 130px;
   object-fit: cover;
   border-radius: 50%;
   background: var(--surface);
@@ -78,7 +79,7 @@ ul {
 .header .role {
   margin: 0 0 6px;
   color: var(--accent);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -97,4 +98,159 @@ ul {
   gap: 5px 30px;
   color: var(--muted);
   font-size: 14px;
+}
+
+/* Sections */
+
+.section {
+  margin: 60px 0;
+}
+
+.section::after{
+  content: "";
+  display: block;
+  max-width: var(--container);
+  height: 1px;
+  margin: 60px auto 0;
+  background: var(--border);
+}
+
+.section:last-of-type::after {
+  display: none;
+}
+
+.section h2 {
+  margin: 0 0 28px;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin-top: 12px;
+  background: var(--accent);
+}
+
+.section p {
+  max-width: 730px;
+  margin: 0 0 12px;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  list-style: none;
+}
+
+.skills li {
+  position: relative;
+  color: var(--muted);
+}
+
+.skills li:not(:last-child)::after {
+  content: "·";
+  position: absolute;
+  right: -15px;
+}
+
+/* Code */
+
+.code-block {
+  overflow-x: auto;
+  max-width: 730px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  background: var(--surface);
+  border: 1px solid var(--surface);
+  border-radius: 15px;
+}
+
+.code-block .top-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 24px;
+  color: var(--muted);
+  background: var(--background);
+}
+
+.code-block .link {
+  color: var(--link);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 24px;
+}
+
+/* Experience & Education */
+
+.item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 35px;
+  margin: 30px 0;
+}
+
+.item-date {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.item-content h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.item-company {
+  margin: 5px 0 15px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.item-content ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.item-content li {
+  margin-bottom: 4px;
+}
+
+/* Footer */
+
+.footer {
+  background: var(--surface);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 100px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-content > a:first-child {
+  font-weight: 700;
+}
+
+.rss-logo img {
+  width: 80px;
+  height: auto;
 }
