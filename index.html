@@ -39,53 +39,65 @@
             </ul>
           </div>
         </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#english">English</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <section class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I have previous professional experience in web layout and HTML/CSS.
-          After a four-year career break, I would like to return to the IT field
-          and focus on Front-End Development.
-        </p>
-        <p>
-          My goal is to strengthen my JavaScript skills, gain practical
-          experience and continue developing as a Front-End Developer.
-        </p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul class="skills">
-          <li>HTML5, Semantic HTML</li>
-          <li>CSS3, Flexbox, CSS Grid</li>
-          <li>Web Design</li>
-          <li>JavaScript, TypeScript (basic)</li>
-          <li>React, Angular (basic)</li>
-          <li>Git, GitHub</li>
-          <li>Figma</li>
-          <li>Chrome DevTools</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>Code Example</h2>
-        <div class="code-block">
-          <div class="top-bar">
-            <span>JavaScript</span>
-            <a
-              class="link"
-              href="https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/javascript"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kata on Codewars
-            </a>
-          </div>
-          <pre><code>function findEvenIndex(arr) {
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            I have previous professional experience in web layout and HTML/CSS.
+            After a four-year career break, I would like to return to the IT
+            field and focus on Front-End Development.
+          </p>
+          <p>
+            My goal is to strengthen my JavaScript skills, gain practical
+            experience and continue developing as a Front-End Developer.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>HTML5, Semantic HTML</li>
+            <li>CSS3, Flexbox, CSS Grid</li>
+            <li>Web Design</li>
+            <li>JavaScript, TypeScript (basic)</li>
+            <li>React, Angular (basic)</li>
+            <li>Git, GitHub</li>
+            <li>Figma</li>
+            <li>Chrome DevTools</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="code">
+        <div class="container">
+          <h2>Code Example</h2>
+          <div class="code-block">
+            <div class="top-bar">
+              <span>JavaScript</span>
+              <a
+                class="link"
+                href="https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/javascript"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kata on Codewars
+              </a>
+            </div>
+            <pre><code>function findEvenIndex(arr) {
   const totalSum = arr.reduce((acc, el) =&gt; el + acc, 0);
   const sum = 0;
   for (let i = 0; i &lt; arr.length; i++) {
@@ -98,70 +110,93 @@
   }
     return -1;
 }</code></pre>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <article class="item">
-          <div class="item-date">Jun 2019 - Mar 2022</div>
-          <div class="item-content">
-            <h3>Web Layout / HTML &amp; CSS</h3>
-            <p class="item-company">SoftClub</p>
-            <ul>
-              <li>Created website layouts using HTML and CSS.</li>
-              <li>Converted designs into responsive web pages.</li>
-              <li>Worked on Angular-based projects.</li>
-              <li>Developed with React.</li>
-              <li>Fixed visual and layout issues.</li>
-            </ul>
-          </div>
-        </article>
-        <article class="item">
-          <div class="item-date">Jan 2018 - Jun 2019</div>
-          <div class="item-content">
-            <h3>Web Layout / HTML &amp; CSS</h3>
-            <p class="item-company">Automated tourism technology</p>
-            <ul>
-              <li>
-                Created and maintained website layouts using HTML and CSS.
-              </li>
-              <li>Updated and redesigned existing websites.</li>
-              <li>Implemented numerous web pages from design layouts.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>Education</h2>
-        <article class="item">
-          <div class="item-date">2008 - 2013</div>
+      </section>
+      <section class="section" id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <article class="item">
+            <div class="item-date">Jun 2019 - Mar 2022</div>
+            <div class="item-content">
+              <h3>Web Layout / HTML &amp; CSS</h3>
+              <p class="item-company">SoftClub</p>
+              <ul>
+                <li>Created website layouts using HTML and CSS.</li>
+                <li>Converted designs into responsive web pages.</li>
+                <li>Worked on Angular-based projects.</li>
+                <li>Developed with React.</li>
+                <li>Fixed visual and layout issues.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="item">
+            <div class="item-date">Jan 2018 - Jun 2019</div>
+            <div class="item-content">
+              <h3>Web Layout / HTML &amp; CSS</h3>
+              <p class="item-company">Automated tourism technology</p>
+              <ul>
+                <li>
+                  Created and maintained website layouts using HTML and CSS.
+                </li>
+                <li>Updated and redesigned existing websites.</li>
+                <li>Implemented numerous web pages from design layouts.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="education">
+        <div class="container">
+          <h2>Education</h2>
+          <article class="item">
+            <div class="item-date">2008 - 2013</div>
 
-          <div class="item-content">
-            <h3>Belarusian National Technical University</h3>
-            <p class="item-company">
-              Bachelor's degree / Technical Security Systems
+            <div class="item-content">
+              <h3>Belarusian National Technical University</h3>
+              <p class="item-company">
+                Bachelor's degree / Technical Security Systems
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <ul class="projects-list">
+            <li class="item">
+              <div class="item-date">Sep 2026</div>
+              <div class="item-content">
+                <h3>CV Website</h3>
+                <p class="item-company">Rolling Scopes School</p>
+                <div class="project-link">
+                  <a
+                    href="https://github.com/KoledaN/rsschool-cv/tree/gh-pages"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="english">
+        <div class="container">
+          <h2>English</h2>
+
+          <div class="english">
+            <h3>B1+ / B2 in progress</h3>
+            <p>
+              I use English to read technical documentation and study Front-End
+              development materials.
             </p>
           </div>
-        </article>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>English</h2>
-
-        <div class="english">
-          <h3>B1+ / B2 in progress</h3>
-          <p>
-            I use English to read technical documentation and study Front-End
-            development materials.
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
